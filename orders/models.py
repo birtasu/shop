@@ -2,6 +2,8 @@ from django.db import models
 from products.models import *
 from django.db.models.signals import post_save
 
+# test
+
 class Status(models.Model):
     name = models.CharField(max_length=24, blank=True, null=True, default=None)
     is_active = models.BooleanField(default=True)
